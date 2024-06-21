@@ -1,0 +1,245 @@
+*{
+    margin: 0%;
+    padding: 0px;
+}
+:root{
+    --main:lightblue;
+    --mainblu:blue;
+    --mainr:red;
+    --mainw:white;
+    --mainbla:black;
+}
+.black{
+    --main:black;
+    --mainblu:white;
+    --mainr:blue;
+    --mainw:black;
+    --mainbla:white;
+}
+.light{
+    --main:lightblue;
+    --mainblu:blue;
+    --mainr:red;
+    --mainw:white;
+    --mainbla:black;
+}
+
+
+
+body{
+    background-color:var(--main);
+    
+}
+.nav{
+    height: 50px;
+    width: 100%;
+    background-color:var(--mainw);
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.mylogo{
+    height: 45px;
+    width: 45px;
+    margin-top: 3px;
+    border: 1px solid var(--mainblu);
+    border-radius: 50%;
+    margin-left: 5px;
+    
+}
+.btn1{
+    height: 20px;
+    width: 50px;
+    background-color: var(--mainbla);
+    color: var(--mainw);
+    border: none;
+    border-radius: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn1:hover{
+    background-color: var(--mainw);
+    color: var(--mainbla);
+}
+
+.menu{
+    display: flex
+}
+.menu li{
+    list-style: none;
+    margin-right: 20px;
+
+}
+.menu li a{
+    text-decoration: none;
+    color: var(--mainblu);
+    transition: 0.3s;
+}
+.menu li a:hover{
+    color:var(--mainr);
+    border-bottom: 2px solid var(--mainr);
+}
+.bar{
+    height: 30px;
+    width: 30px;
+    background-color: var(--mainw);
+    margin-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+}
+.bar1{
+    height: 2px;
+    width: 30px;
+    background-color: var(--mainbla);
+    margin-top: 6px;
+}
+
+
+
+
+.mobile{
+    height: 300px;
+    width: 200px;
+    background-color: var(--mainw);
+    position: absolute;
+    /* top: 55px; */
+    left: -300px;
+    transition: 1s;
+
+}
+.mobilenav{
+
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid var(--mainbla);
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.mobilebar{
+    height: 23px;
+    width: 25px;
+    background-color: var(--mainw);
+    margin-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.mobilebar1{
+    height: 2px;
+    width: 23px;
+    background-color: var(--mainbla);
+    margin-top: 4px;
+    margin-left: 1px;
+}
+.mobile ul {
+    text-align: center;
+}
+.mobile ul li{
+    margin-top: 30px;
+}
+.mobile ul li a{
+    text-decoration: none;
+    font-weight: 20px;
+    font-size: 20px;
+    color: var(--mainblu);
+    transition: 0.3s;
+}
+.mobile ul li a:hover{
+    color: var(--mainr);
+    border-bottom: 2px solid var(--mainr);
+    border-radius: 3px;
+}
+
+
+
+
+
+
+.info{
+    margin-left: 8%;
+    margin-top: 15%;
+    color: var(--mainbla);
+}
+
+
+.info span{
+    color:var(--mainr);
+}
+.btn{
+    padding: 5px;
+    margin: 15px;
+    background-color: var(--mainbla);
+    color: var(--mainw);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--mainw);
+    color: var(--mainbla);
+}
+.img-box{
+    height: 80%;
+    width: 45%;
+    position: absolute;
+    right: 100Px;
+    bottom: 0;
+    
+}
+.img-box img{
+    height: 100%;
+    
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: bottom 1s ,left 1s;
+    
+}
+.img-box:hover .back{
+    bottom: 40px;
+}
+.img-box:hover .frond{
+    left: 54%;
+}
+@media screen and (max-width:600px){
+
+.menu{
+    display: none;
+}
+.bar{
+    display: block;
+}
+}
+
+
+
+
+ @media screen and (max-width:480px) {
+
+    .img-box{
+        top: 400px;
+    }
+    
+    .img-box img{
+        width: 400px;
+        height: 400px;
+        bottom: 300px;
+    } 
+    
+    .nav{
+        position: fixed;
+        top: 1px;
+        left: 2px;
+    }
+
+    .btn1{
+        margin-top: 5px;
+    }
+} 

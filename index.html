@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tizzy World</title>
+    <link rel="icon" href="image/logo.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="dark">
+
+    <div class="nav">
+        <div class="iogo">
+            <img class="mylogo" src="image/logo.png" alt="logo">
+        </div>
+
+        <div class="theme">
+            <button onclick="darkmode()" class="btn1">Dark</button>
+            <button onclick="lightmode()" class="btn1">Light</button>
+        </div>
+
+        <ul class="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Services</a></li>
+        </ul>
+        <div class="bar" onclick="show()">
+            <div class="bar1"></div>
+            <div class="bar1"></div>
+            <div class="bar1"></div>
+        </div>
+
+    </div>
+
+    <div class="mobile">
+        <div class="mobilenav">
+
+            <div class="mobilebar" onclick="closewindow()">
+                <div class="mobilebar1"></div>
+                <div class="mobilebar1"></div>
+                <div class="mobilebar1"></div>
+
+            </div>
+        </div>
+
+
+        <ul>
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">About</a> </li>
+            <li><a href="#">Contact</a> </li>
+            <li><a href="#">Services</a> </li>
+            
+        </ul>
+    </div>
+
+    <div class="info" >
+        <h1>Welcome to My <span>Tizzy</span> World</h1>
+        <h1>Adventure Travel <span>Bag</span>Store</h1> <br>
+        <p>Lock and Key Trolley.. <br>
+            Fashion Handbag shop..
+            Belt Pouch. <br> 
+            Briefcase Suitcase & Wallet Shop.. <br>
+        </p>
+        <button  class="btn">More
+            <i class="fa fa-download""></i>
+            </button>
+    </div>
+    <div class="img-box">
+        <img src="image/back.png" alt="fire" class="back">
+        <img src="image/frond.png" alt="frond" class="frond">
+        
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>
